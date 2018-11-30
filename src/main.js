@@ -6,8 +6,8 @@ import App from './App'
 
 // Vue.use(VueResource)
 
-import axios from "axios";
-Vue.prototype.$ajax = axios
+// import axios from "axios";
+// Vue.prototype.$ajax = axios
 
 Vue.config.productionTip = false
 

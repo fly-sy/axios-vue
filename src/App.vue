@@ -1,22 +1,25 @@
 <template>
   <div id="app">
-
+    {{obj}}
   </div>
 </template>
 
 <script>
-import { getInfo, getList } from "./api";
+import { getInfo } from "./api";
 
 export default {
+  data: () => ({
+    obj: null
+  }),
   created() {
     this.getInfo();
   },
   methods: {
     getInfo() {
-      let params = {
-      };
+      let params = {};
       getInfo(params).then(res => {
-        console.log(res);
+        // console.log(res);
+        this.obj = res;
       });
     }
   }

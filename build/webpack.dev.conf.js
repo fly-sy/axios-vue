@@ -13,6 +13,19 @@ const portfinder = require('portfinder')
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+const express = require('express')
+
+const app = express()
+
+app.get('/api/getinfo', (req, res) => {
+  res.json({ name: 'fly', age: 18 })
+})
+
+app.listen(3000, () => {
+  console.log('http://127.0.0.1:3000')
+})
+
+
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
