@@ -14,9 +14,6 @@ export default {
   methods: {
     getInfo() {
       let params = {
-        __t: 1540365673211,
-        page: 1,
-        count: 5
       };
       getInfo(params).then(res => {
         console.log(res);

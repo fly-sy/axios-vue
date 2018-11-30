@@ -8,6 +8,10 @@
 # install dependencies
 npm install
 
+# Open the backend service on port 3000
+
+npm run server 
+
 # serve with hot reload at localhost:8080
 npm run dev
 

@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const baseURL = '/api'
+const baseURL = 'v1/'
 axios.defaults.baseURL = baseURL
 
 export const getInfo = (params) => {
-  return axios.get('/v4/api/film/now-playing', params).then(res => res.data)
+  return axios.get('api/getinfo', params).then(res => res.data)
 }
 
 
